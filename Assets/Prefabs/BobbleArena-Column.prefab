@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 746663555161157676}
   - component: {fileID: 5660511465930500749}
   - component: {fileID: -642282745094172020}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: BobbleArena-Column
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 746663555168378830}
   - component: {fileID: 746663555171803118}
   - component: {fileID: 746663555170802990}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2011920297475848092}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 8127593540487891202}
   - component: {fileID: 2722774824113454262}
   - component: {fileID: 329540705059481922}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -296,7 +296,7 @@ GameObject:
   - component: {fileID: 2951960877369359992}
   - component: {fileID: 4993404558646209523}
   - component: {fileID: 6117072438331013424}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Cube.002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2001248949813958104}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Lamp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
