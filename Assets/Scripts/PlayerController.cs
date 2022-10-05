@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask layerMask;
     private Vector3 currentLookTarget = Vector3.zero;
 
+    [SerializeField] private Animator bodyAnimator;
+
     void Start()
     {
         characterController = GetComponent<CharacterController>();
@@ -26,10 +28,11 @@ public class PlayerController : MonoBehaviour
         Vector3 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
         if (moveDirection == Vector3.zero)
         {
-
+            bodyAnimator.SetBool("IsMoving", false);
         }
         else
         {
+            bodyAnimator.SetBool("IsMoving", true);
             head.AddForce(transform.right * 150, ForceMode.Acceleration);
         }
         
