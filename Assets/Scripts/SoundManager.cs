@@ -7,15 +7,15 @@ public class SoundManager : MonoBehaviour
     public static SoundManager Instance = null;
     private AudioSource soundEffectAudio;
 
-    [SerializeField] private AudioClip gunFire;
-    [SerializeField] private AudioClip upgradedGunFire;
-    [SerializeField] private AudioClip hurt;
-    [SerializeField] private AudioClip alienDeath;
-    [SerializeField] private AudioClip marineDeath;
-    [SerializeField] private AudioClip victory;
-    [SerializeField] private AudioClip elevatorArrived;
-    [SerializeField] private AudioClip powerUpPickup;
-    [SerializeField] private AudioClip powerUpAppear;
+    public AudioClip gunFire;
+    public AudioClip upgradedGunFire;
+    public AudioClip hurt;
+    public AudioClip alienDeath;
+    public AudioClip marineDeath;
+    public AudioClip victory;
+    public AudioClip elevatorArrived;
+    public AudioClip powerUpPickup;
+    public AudioClip powerUpAppear;
 
     // Start is called before the first frame update
     void Start()
@@ -44,5 +44,10 @@ public class SoundManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void PlayOneShot(AudioClip clip)
+    {
+        soundEffectAudio.PlayOneShot(clip);
     }
 }
