@@ -46,6 +46,11 @@ public class GameManager : MonoBehaviour
 
         currentUpgradeTime += Time.deltaTime;
 
+        if (player == null)
+        {
+            return;
+        }
+
         if (currentUpgradeTime > actualUpgradeTime)
         {
             
