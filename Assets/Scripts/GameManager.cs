@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private GameObject[] spawnPoints;
-    [SerializeField] private GameObject alien;
+    [SerializeField] public GameObject alien;
 
     [SerializeField] private int maxAliensOnScreen;
     [SerializeField] private int totalAliens;
@@ -26,6 +26,11 @@ public class GameManager : MonoBehaviour
     private float actualUpgradeTime = 0;
     private float currentUpgradeTime = 0;
 
+    public void AlienDestroyed()
+    {
+        aliensOnScreen -= 1;
+        totalAliens -= 1;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -106,6 +111,8 @@ public class GameManager : MonoBehaviour
 
                     Vector3 targetRotation = new Vector3(player.transform.position.x, newAlien.transform.position.y, player.transform.position.z);
                     newAlien.transform.LookAt(targetRotation);
+
+                    alienScript.OnDestroy.AddListener(AlienDestroyed);
                 }
             }
         }
